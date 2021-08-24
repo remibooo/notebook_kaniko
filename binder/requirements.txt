@@ -1,0 +1,5 @@
+ipython==7.12.0
+ipywidgets==7.5.1
+logger==1.4
+qarnot==v2.1.0
+tk==0.1.0
