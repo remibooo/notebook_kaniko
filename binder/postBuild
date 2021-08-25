@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -ex
+
+
+# jupyter nbextension enable python-markdown/main
+# jupyter nbextension enable --py widgetsnbextension
+
+# Notebooks w/ scripts that auto-run code must be "trusted" to work the first time
+jupyter trust mvp_kaniko.ipynb
+
+# for start config
+# exec "$@"
