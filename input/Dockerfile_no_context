@@ -1,5 +1,0 @@
-FROM alpine:latest
-
-RUN mkdir -p /checki/checko/foo/bar
-
-RUN touch /checki/no_context
