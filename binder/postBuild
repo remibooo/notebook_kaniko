@@ -2,9 +2,16 @@
 
 set -ex
 
+
+jupyter contrib nbextension install --user
+jupyter nbextension enable --py widgetsnbextension
+jupyter nbextension enable python-markdown/main
+
 # Notebooks w/ scripts that auto-run code must be "trusted" to work the first time
-#jupyter trust /home/jovyan/binder/mvp_kaniko.ipynb
-jupyter trust /home/jovyan/binder/mvp_kaniko.ipynb
+jupyter trust mvp_kaniko.ipynb
+
+jupyter trust bilibo.ipynb
+
 
 
 # exec "$@"
