@@ -1,8 +1,6 @@
 #!/bin/bash
 
-set -e
+set -ex
 
 # Notebooks w/ scripts that auto-run code must be "trusted" to work the first time
-jupyter trust /home/jovyan/binder/mvp_kaniko.ipynb
-
-#exec "$@"
+jupyter trust *.ipynb
